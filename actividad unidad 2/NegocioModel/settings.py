@@ -41,3 +41,18 @@ STATICFILES_DIRS = [
 LANGUAGE_CODE = 'es-cl'
 
 TIME_ZONE = 'America/Santiago'
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'negocio',
+        'USER': 'user_negocio',
+        'PASSWORD': 'Holitas01',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
+    },
+}
